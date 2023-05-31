@@ -28,7 +28,6 @@ export class SignUpController implements Controller {
       if (!isValid) {
         return badRequest(new InvalidParamError('email'))
       }
-
       this.addAccount.add({
         name,
         email,
